@@ -3,7 +3,7 @@ import { postUser } from "../controllers/postUser";
 import { getUser } from "../controllers/getUser";
 import { deleteUser } from "../controllers/deleteUser";
 
-const routedr = express.Router();
+const router = express.Router();
 
 
 /**
@@ -33,8 +33,8 @@ const routedr = express.Router();
  *                type: object
  *
  */
-routedr.route("/pushCommand").post(postUser);
+router.route("/pushCommand").post(postUser);
 
 
 
-export default routedr;
+export default router;
